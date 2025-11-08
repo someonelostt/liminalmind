@@ -6,37 +6,50 @@
   <title>dontlookbackrunawayhide</title>
   <style>
     body {
-      background-color: black;
+      background: black;
       color: white;
       text-align: center;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 50px;
+      padding: 50px 0;
     }
     h1 {
-      font-size: 2em;
       margin-bottom: 40px;
+      font-size: 2rem;
     }
-    iframe {
+    .video-container {
+      position: relative;
       width: 80%;
-      height: 450px;
       max-width: 800px;
-      border: none;
+      margin: 0 auto;
+      padding-top: 45%; /* proporcional, simula 16:9 */
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;"><b><span style="font-family: Schoolbell; font-size: xxx-large;">&nbsp; RUN AWAY&nbsp;</span></b></h2><br />
 
-  <iframe 
-   <iframe
-  width="560" height="315"
-  src="https://www.youtube.com/embed/gmuMs5QSjXs?si=-dI5aC7shemDHQfJ?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&loop=1&playlist=VIDEO_ID&playsinline=1"
-  frameborder="0"
-  allowfullscreen>
-  </iframe>
+  <h1>RUN AWAY</h1>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/gmuMs5QSjXs?si=aipcmLNttlI_4Qa-?autoplay=1&mute=1&controls=0&loop=1&playlist=gmuMs5QSjXs?si=aipcmLNttlI_4Qa-&modestbranding=1&showinfo=0&rel=0&playsinline=1"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
 </body>
 </html>
+</html>
+
 
 
 
